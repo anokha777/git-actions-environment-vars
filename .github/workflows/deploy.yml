@@ -38,5 +38,6 @@ jobs:
       - name: Output information
         run: |        
           echo "mongodb username ${{ env.MONGODB_USERNAME }}"
-          echo "mongodb database name env.MONGODB_DB_NAME"
-          echo "triggered by user: env.GITHUB_ACTOR"
+          echo "mongodb database name $MONGODB_DB_NAME"
+          echo "triggered by user: $GITHUB_ACTOR"
+          echo "github repo name: $GITHUB_REPOSITORY"
