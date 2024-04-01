@@ -39,3 +39,4 @@ jobs:
         run: |        
           echo "mongodb username ${{ env.MONGODB_USERNAME }}"
           echo "mongodb database name env.MONGODB_DB_NAME"
+          echo "triggered by user: env.GITHUB_ACTOR"
